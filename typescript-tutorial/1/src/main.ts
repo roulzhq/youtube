@@ -18,7 +18,6 @@ const todos: Todo[] = [
 todos.forEach(todo => {
   const div = document.createElement("div")
   div.innerHTML = `label: <b>${todo.label}</b> - done: <b>${todo.done}</b> - description: <b>${todo?.description ?? "none"}</b>`;
-  
 
   app.appendChild(div);
 })
